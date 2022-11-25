@@ -7,7 +7,10 @@ import { NavLink } from 'react-router-dom'
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logoIgnite} alt="logo do ignite que é composta por 2 triângulos sobrepostos inclinados para a direita" />
+      <img
+        src={logoIgnite}
+        alt="logo do ignite que é composta por 2 triângulos sobrepostos inclinados para a direita"
+      />
       <nav>
         <NavLink to="/" title="Timer">
           <Timer size={20} />
