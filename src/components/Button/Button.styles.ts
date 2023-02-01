@@ -1,6 +1,12 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const ButtonContainer = styled.button`
+interface ButtonProps {
+  theme: {
+    primary: string
+  }
+}
+
+export const ButtonContainer = styled.button<ButtonProps>`
   width: 100px;
-  background-color: ${props => props.theme.primary};
+  background-color: ${(props) => props.theme.primary};
 `
